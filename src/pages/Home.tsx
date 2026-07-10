@@ -35,7 +35,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center justify-between mt-8 pt-4 border-t border-white/5">
-              <span className="text-4xl font-bold tracking-tighter">06+</span>
+              <span className="text-4xl font-bold tracking-tighter">19+</span>
               <span className="text-[10px] font-mono text-white/40 leading-tight uppercase font-bold">SaaS<br />Platforms</span>
             </div>
           </GlassCard>
