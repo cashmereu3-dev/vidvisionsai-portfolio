@@ -5,8 +5,7 @@ import GlassCard from '../components/ui/GlassCard';
 import { PROJECTS } from '../constants/content';
 import { cn } from '../lib/utils';
 
-const categories = ["All", "AI Systems", "SaaS", "Creative", "Ecosystem"];
-
+const categories = ["All", "AI Systems", "SaaS", "Creative", "Business", "Ecosystem"];
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
 
