@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Cpu, Globe, Rocket, Shield, Sparkles, Terminal } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Cpu, Globe, Rocket, Shield, Sparkles, Terminal } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/sections/Hero';
 import AIEcosystemVisual from '../components/sections/AIEcosystemVisual';
@@ -131,6 +131,47 @@ export default function Home() {
                 </div>
               </GlassCard>
           </div>
+      </section>
+
+
+      {/* Complete Build Index */}
+      <section className="max-w-7xl mx-auto px-4 md:px-12 lg:px-20">
+        <div className="mb-12">
+          <h3 className="text-[10px] font-mono text-blue-400 uppercase tracking-[0.2em] mb-4 font-bold">Complete Build Index</h3>
+          <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-6">
+            Every <span className="italic text-gray-500">Build</span>.
+          </h2>
+          <p className="text-gray-400 text-lg leading-relaxed max-w-2xl">
+            All {PROJECTS.length} live platforms in the VidVisions ecosystem — SaaS, AI systems, creative experiences, and business launches.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {PROJECTS.map((project) => (
+            <a key={project.id} href={project.url} target="_blank" rel="noopener noreferrer" className="group">
+              <GlassCard className="h-full p-0 overflow-hidden border-white/5" hover={false}>
+                <div className="relative aspect-[16/9] overflow-hidden bg-black/40">
+                  <img src={project.image} alt={project.title} loading="lazy" className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent opacity-70" />
+                </div>
+                <div className="p-6">
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {project.tags.slice(0, 2).map((tag) => (
+                      <span key={tag} className="text-[9px] font-bold uppercase tracking-widest text-blue-400 opacity-80">{tag}</span>
+                    ))}
+                  </div>
+                  <div className="flex items-center justify-between gap-2">
+                    <h3 className="text-lg font-bold text-white group-hover:text-blue-400 transition-colors tracking-tight">{project.title}</h3>
+                    <ArrowUpRight className="w-4 h-4 text-white/30 group-hover:text-blue-400 transition-colors shrink-0" />
+                  </div>
+                  <p className="text-gray-400 text-xs leading-relaxed line-clamp-2 mt-2">{project.description}</p>
+                </div>
+              </GlassCard>
+            </a>
+          ))}
+        </div>
+        <div className="mt-10 text-center">
+          <Link to="/projects" className="inline-block px-10 py-4 bg-white/5 border border-white/10 text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white hover:text-black transition-all">Explore Full Pipeline</Link>
+        </div>
       </section>
 
       {/* Interactive 3D Ecosystem */}
