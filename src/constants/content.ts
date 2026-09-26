@@ -165,19 +165,24 @@ export const PROJECTS = [
 export const EDUCATION = [
   {
         institution: "Western Governors University",
-        degree: "Software Engineering Student",
-        description: "Focusing on full-stack development, cloud architecture, and modern engineering principles.",
+        degree: "B.S. Software Engineering (In Progress)",
+        description: "Expected 2028. Full-stack development, cloud architecture, and modern engineering principles.",
   },
   {
         institution: "Southwest Mississippi Community College",
-        degree: "Process Operations Technology Graduate",
-        description: "Foundational training in technical systems and operational efficiency.",
+        degree: "A.S. Process Operations Technology",
+        description: "GPA 3.8, Summa Cum Laude. Foundational training in technical systems and operational efficiency.",
   },
   ];
 
 export const LINKS = {
     microsoftLearn: "https://learn.microsoft.com/en-us/users/javonashley-9359/",
     email: "jvnashley@gmail.com",
+    phone: "(601) 341-3901",
+    github: "https://github.com/cashmereu3-dev",
+    linkedin: "https://www.linkedin.com/in/jevon-ashley-75183a409",
+    reel: "/reel/",
+    resumePdf: "/Jevon_Ashley_Resume.pdf",
 };
 
 export const TECH_STACK = [
