@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Video Reel | Jevon Ashley</title>
+<meta name="description" content="Jevon Ashley's video reel: commercials, community films, and aerial work from McComb, Mississippi, shot, edited, and scored through VidVisions AI and Visions4U.">
+<link rel="canonical" href="https://vidvisionsai.pro/reel">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vidvisionsai.pro/reel">
+<meta property="og:title" content="Video Reel | Jevon Ashley">
+<meta property="og:description" content="Commercials, community films, and aerial work from McComb, Mississippi.">
+<meta property="og:image" content="https://vidvisionsai.pro/reel/posters/bt.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://vidvisionsai.pro/reel/posters/bt.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=IBM+Plex+Mono:wght@400;500&family=Libre+Franklin:wght@400;500;600&display=swap">
+<style>
+  /* Single-theme by design: a blue-hour screening room so the footage carries the color. */
+  :root {
+    color-scheme: dark;
+    --night: #0F2233;
+    --deep: #0A1826;
+    --panel: #132A3D;
+    --line: #25405A;
+    --paper: #EEF2F5;
+    --muted: #9AB0C0;
+    --amber: #F2A93B;
+    --amber-ink: #1B1204;
+    --display: "Big Shoulders Display", "Oswald", "Arial Narrow", Impact, sans-serif;
+    --body: "Libre Franklin", "Helvetica Neue", Arial, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    --gutter: clamp(16px, 4vw, 44px);
+    --max: 1180px;
+  }
+  html { background: var(--night); }
+  body {
+    background: var(--night);
+    color: var(--paper);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; border-radius: 2px; }
+  .wrap { max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
+  .mono { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+  h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; }
+
+  /* ---------- top bar ---------- */
+  .top {
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
+    background: color-mix(in srgb, var(--night) 88%, transparent);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
+  .brand { display: flex; align-items: baseline; gap: 12px; text-decoration: none; }
+  .brand b { font-family: var(--display); font-weight: 900; font-size: 22px; letter-spacing: .04em; text-transform: uppercase; }
+  .brand span { color: var(--muted); }
+  .top nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px 22px; }
+  .top nav a { text-decoration: none; color: var(--muted); }
+  .top nav a:hover { color: var(--paper); }
+
+  /* ---------- hero ---------- */
+  .hero { padding-block: clamp(40px, 7vw, 88px) clamp(36px, 5vw, 64px); }
+  .hero .wrap { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 56px); align-items: center; }
+  .eyebrow { color: var(--amber); margin: 0 0 18px; }
+  .hero h1 {
+    font-weight: 900; text-transform: uppercase;
+    font-size: clamp(2.9rem, 5.8vw, 5rem); line-height: .88; letter-spacing: .005em;
+  }
+  .hero h1 span { display: block; }
+  .hero h1 .last { color: var(--amber); }
+  .lede { max-width: 34em; color: var(--muted); font-size: 17px; margin: 26px 0 30px; }
+  .lede strong { color: var(--paper); font-weight: 600; }
+  .lede a { color: var(--amber); text-underline-offset: 3px; }
+  .ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: var(--mono); font-size: 13px; letter-spacing: .08em; text-transform: uppercase;
+    padding: 14px 20px; border-radius: 3px; text-decoration: none; border: 1px solid var(--line);
+    transition: border-color .2s, background .2s;
+  }
+  .btn.primary { background: var(--amber); color: var(--amber-ink); border-color: var(--amber); font-weight: 500; }
+  .btn.primary:hover { background: #F7BC5E; }
+  .btn.ghost:hover { border-color: var(--muted); }
+
+  /* viewfinder */
+  .vf { position: relative; margin: 0; }
+  .vf img { display: block; width: 100%; max-width: 100%; aspect-ratio: 2 / 1; object-fit: cover; border-radius: 2px; }
+  .vf .hud { position: absolute; inset: 0; pointer-events: none; padding: 14px 16px; display: grid; grid-template-rows: auto 1fr auto; }
+  .hud .row { display: flex; justify-content: space-between; gap: 12px; font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,.7); }
+  .rec { display: inline-flex; align-items: center; gap: 7px; }
+  .rec i { width: 8px; height: 8px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 8px var(--amber); animation: blink 1.6s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: .15; } }
+  .corners { position: absolute; inset: 8px; pointer-events: none; }
+  .corners b { position: absolute; width: 22px; height: 22px; border-color: rgba(255,255,255,.85); border-style: solid; border-width: 0; }
+  .corners b:nth-child(1) { top: 0; left: 0; border-top-width: 2px; border-left-width: 2px; }
+  .corners b:nth-child(2) { top: 0; right: 0; border-top-width: 2px; border-right-width: 2px; }
+  .corners b:nth-child(3) { bottom: 0; left: 0; border-bottom-width: 2px; border-left-width: 2px; }
+  .corners b:nth-child(4) { bottom: 0; right: 0; border-bottom-width: 2px; border-right-width: 2px; }
+  .vf figcaption { margin-top: 10px; color: var(--muted); }
+  .hero .vf img { animation: pull 1.4s ease-out both; }
+  @keyframes pull { from { filter: blur(6px) brightness(.7); transform: scale(1.03); } to { filter: none; transform: none; } }
+
+  /* ---------- clients strip ---------- */
+  .clients { border-block: 1px solid var(--line); background: var(--deep); }
+  .clients .wrap { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 28px; padding-block: 20px; }
+  .clients .mono { color: var(--muted); }
+  .clients ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 26px; }
+  .clients li { font-family: var(--display); font-weight: 800; font-size: 20px; letter-spacing: .03em; text-transform: uppercase; color: var(--paper); }
+
+  /* ---------- sections ---------- */
+  section.block { padding-block: clamp(56px, 8vw, 104px); }
+  .head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 16px 48px; align-items: end; margin-bottom: 36px; }
+  .head h2 { font-weight: 800; text-transform: uppercase; font-size: clamp(2.4rem, 5vw, 3.8rem); line-height: .92; }
+  .head p { margin: 0; color: var(--muted); max-width: 36em; }
+  .head .mono { display: block; color: var(--amber); margin-bottom: 12px; }
+
+  /* ---------- experience ---------- */
+  .timeline { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .timeline li { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 4px 28px; padding-block: 20px; border-bottom: 1px solid var(--line); }
+  .timeline .yrs { font-family: var(--mono); font-size: 13px; letter-spacing: .04em; color: var(--amber); font-variant-numeric: tabular-nums; padding-top: 6px; }
+  .timeline h3 { font-weight: 800; font-size: clamp(1.5rem, 2.4vw, 1.9rem); line-height: 1.05; text-transform: uppercase; letter-spacing: .01em; }
+  .timeline .role { margin: 4px 0 0; color: var(--paper); font-weight: 600; }
+  .timeline p.what { margin: 6px 0 0; color: var(--muted); max-width: 62em; }
+  .facts { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 32px 56px; margin-top: 40px; }
+  .facts .mono.label { display: block; color: var(--amber); margin-bottom: 14px; }
+  .comp { margin: 0; display: grid; gap: 14px; }
+  .comp div { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 4px 20px; }
+  .comp dt { font-weight: 600; color: var(--paper); }
+  .comp dd { margin: 0; color: var(--muted); }
+  .skills { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .skills li { border: 1px solid var(--line); border-radius: 2px; padding: 6px 10px; font-size: 14px; }
+  .edu { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .edu li strong { display: block; font-weight: 600; }
+  .edu li span { color: var(--muted); }
+
+  /* ---------- reel ---------- */
+  .reel { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 28px; }
+  .clip { display: grid; gap: 14px; align-content: start; }
+  .clip.feature { grid-column: 1 / -1; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 28px; align-items: end; }
+  .frame { position: relative; display: block; text-decoration: none; border-radius: 2px; overflow: hidden; background: var(--deep); }
+  .frame img { display: block; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; object-fit: cover; transition: transform .6s cubic-bezier(.2,.7,.2,1), filter .3s; }
+  .frame:hover img, .frame:focus-visible img { transform: scale(1.035); filter: brightness(.82); }
+  .frame .corners { inset: 10px; opacity: .0; transform: scale(1.04); transition: opacity .25s, transform .35s; }
+  .frame:hover .corners, .frame:focus-visible .corners { opacity: 1; transform: none; }
+  .play {
+    position: absolute; left: 50%; top: 50%; translate: -50% -50%;
+    width: 62px; height: 62px; border-radius: 50%;
+    background: rgba(10, 24, 38, .62); border: 1px solid rgba(255,255,255,.5);
+    display: grid; place-items: center; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+    transition: background .2s, border-color .2s;
+  }
+  .play::before { content: ""; margin-left: 4px; border-style: solid; border-width: 10px 0 10px 16px; border-color: transparent transparent transparent #fff; }
+  .frame:hover .play { background: var(--amber); border-color: var(--amber); }
+  .frame:hover .play::before { border-left-color: var(--amber-ink); }
+  .tc {
+    position: absolute; right: 12px; bottom: 12px;
+    font-family: var(--mono); font-size: 12px; letter-spacing: .06em; font-variant-numeric: tabular-nums;
+    background: rgba(10, 24, 38, .78); color: #fff; padding: 4px 8px; border-radius: 2px;
+  }
+  .frame.playing video { display: block; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; background: #000; }
+  .clip .kind { color: var(--amber); margin: 0 0 6px; }
+  .clip h3 { font-weight: 800; font-size: clamp(1.7rem, 2.6vw, 2.2rem); line-height: 1; text-transform: uppercase; letter-spacing: .01em; }
+  .clip.feature h3 { font-size: clamp(2.2rem, 4vw, 3.2rem); }
+  .clip p.desc { margin: 10px 0 0; color: var(--muted); max-width: 40em; }
+  .roles { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .roles li { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--paper); border: 1px solid var(--line); padding: 4px 8px; border-radius: 2px; }
+  .watch { display: inline-block; margin-top: 14px; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--amber); text-decoration: none; border-bottom: 1px solid transparent; }
+  .watch:hover { border-bottom-color: var(--amber); }
+  .reel-note { margin-top: 36px; color: var(--muted); font-size: 14px; }
+
+  /* ---------- pillars ---------- */
+  .band { background: var(--deep); border-block: 1px solid var(--line); }
+  .pillars { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--line); }
+  .pillar { padding: 28px 28px 30px 0; display: grid; gap: 12px; align-content: start; }
+  .pillar + .pillar { padding-left: 28px; border-left: 1px solid var(--line); }
+  .pillar h3 { font-weight: 900; font-size: clamp(2.6rem, 4.4vw, 3.6rem); line-height: .9; text-transform: uppercase; }
+  .pillar p { margin: 0; color: var(--muted); }
+  .pillar .tools { color: var(--paper); line-height: 1.9; }
+
+  /* ---------- software ---------- */
+  .ships { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; }
+  .ship { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 16px; padding-block: 20px; border-top: 1px solid var(--line); align-items: baseline; }
+  .ship h3 { font-weight: 800; font-size: 1.6rem; line-height: 1.05; text-transform: uppercase; letter-spacing: .01em; }
+  .ship h3 a { text-decoration: none; border-bottom: 1px solid var(--line); }
+  .ship h3 a:hover { border-bottom-color: var(--amber); }
+  .ship p { grid-column: 1 / -1; margin: 0; color: var(--muted); }
+  .chip { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; padding: 3px 8px; border-radius: 99px; white-space: nowrap; }
+  .all-builds { margin-top: 32px; }
+  .chip.live { color: #0C2A18; background: #7FD9A2; }
+  .chip.client { color: #0B1E33; background: #A9C9E8; }
+  .chip.dev { color: var(--paper); border: 1px solid var(--line); }
+
+  /* ---------- about + contact ---------- */
+  .about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px 64px; }
+  .about p { margin: 0 0 16px; color: var(--muted); max-width: 36em; }
+  .about p strong { color: var(--paper); font-weight: 600; }
+  .contact h2 { font-weight: 900; text-transform: uppercase; font-size: clamp(2.8rem, 6vw, 4.6rem); line-height: .88; margin-bottom: 26px; }
+  .lines { display: grid; gap: 0; border-top: 1px solid var(--line); }
+  .line { display: grid; grid-template-columns: 88px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding-block: 14px; border-bottom: 1px solid var(--line); }
+  .line .mono { color: var(--muted); }
+  .line .val { font-size: 18px; font-weight: 500; overflow-wrap: anywhere; user-select: all; }
+  .line a.val { text-decoration: none; }
+  .line a.val:hover { color: var(--amber); }
+  .copy { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; background: none; color: var(--paper); border: 1px solid var(--line); border-radius: 2px; padding: 6px 10px; cursor: pointer; }
+  .copy:hover { border-color: var(--muted); }
+  .copy.done { color: var(--amber-ink); background: var(--amber); border-color: var(--amber); }
+  .area { margin-top: 18px; color: var(--muted); }
+
+  footer { border-top: 1px solid var(--line); }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; padding-block: 24px; color: var(--muted); }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 900px) {
+    .hero .wrap, .head, .about, .clip.feature { grid-template-columns: minmax(0, 1fr); }
+    .pillars { grid-template-columns: minmax(0, 1fr); }
+    .pillar, .pillar + .pillar { padding: 24px 0; border-left: 0; }
+    .pillar + .pillar { border-top: 1px solid var(--line); }
+    .ships { grid-template-columns: minmax(0, 1fr); }
+    .facts { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .reel { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+    .top nav { gap: 14px; }
+    .brand span { display: none; }
+    .line { grid-template-columns: minmax(0, 1fr) auto; }
+    .line .mono { grid-column: 1 / -1; }
+    .hud .row.bottom span:first-child { display: none; }
+    .timeline li { grid-template-columns: minmax(0, 1fr); }
+    .timeline .yrs { padding-top: 0; }
+    .comp div { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<style>html,body{margin:0} *,*::before,*::after{box-sizing:border-box} img{max-width:100%} [hidden]{display:none!important}</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Jevon Ashley, back to top">
+      <b>Jevon Ashley</b>
+      <span class="mono">Visions4U</span>
+    </a>
+    <nav class="mono" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a href="https://vidvisionsai.pro">All builds ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow mono">Content creator · Video producer · Creative technologist</p>
+        <h1>
+          <span>I build the app.</span>
+          <span>I fly the shot.</span>
+          <span class="last">I write the song.</span>
+        </h1>
+        <p class="lede">I'm <strong>Jevon Ashley</strong>, a content creator and video producer in McComb, Mississippi. Through <strong>VidVisions AI</strong> and <strong>Visions4U</strong> I script, shoot, edit, and score commercial campaigns, explainers, and aerial work, and I build the software I make videos about. This is the video side of my portfolio. Every software build is on <a href="https://vidvisionsai.pro">vidvisionsai.pro</a>.</p>
+        <div class="ctas">
+          <a class="btn primary" href="#work">Watch the work</a>
+          <a class="btn ghost" href="#experience">See my experience</a>
+        </div>
+      </div>
+      <figure class="vf">
+        <img src="/reel/posters/hero.jpg" alt="Tiny-planet drone shot over a lakeside park with the title Visions4U, Captured by Cashmere" width="800" height="398">
+        <div class="corners" aria-hidden="true"><b></b><b></b><b></b><b></b></div>
+        <div class="hud" aria-hidden="true">
+          <div class="row"><span class="rec"><i></i>Rec</span><span>5 films · 08:34</span></div>
+          <div></div>
+          <div class="row bottom"><span>31.2438° N · 90.4532° W</span><span>McComb, MS</span></div>
+        </div>
+        <figcaption class="mono">Visions4U end card · Captured by Cashmere</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="clients">
+    <div class="wrap">
+      <span class="mono">Made for</span>
+      <ul>
+        <li>B&amp;T Automotive</li>
+        <li>Black History Gallery</li>
+        <li>Kelly Boi Beer &amp; Smokes</li>
+        <li>Smoker's Palace</li>
+        <li>Bella's Kitchen</li>
+        <li>The Mallard</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="block" id="work">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <span class="mono">The reel</span>
+          <h2>Local businesses, shot from the ground and the sky</h2>
+        </div>
+        <p>Through VidVisions AI and Visions4U I fly the drone, shoot the ground footage, cut the edit, and write original music when a spot needs a song. Tap any frame to watch.</p>
+      </div>
+
+      <div class="reel">
+        <article class="clip feature">
+          <a class="frame" href="https://res.cloudinary.com/uixsjwlk/video/upload/q_auto,vc_h264/portfolio/work-3632969.mp4" target="_blank" rel="noopener" aria-label="Watch the B&amp;T Automotive commercial, 1 minute 11 seconds">
+            <img src="/reel/posters/bt.jpg" alt="Drone shot over the roof of B&amp;T Automotive, a blue tire and auto shop" width="800" height="450">
+            <div class="corners" aria-hidden="true"><b></b><b></b><b></b><b></b></div>
+            <span class="play" aria-hidden="true"></span>
+            <span class="tc">01:11</span>
+          </a>
+          <div>
+            <p class="kind mono">Commercial · Tire &amp; auto shop</p>
+            <h3>B&amp;T Automotive</h3>
+            <p class="desc">A shop commercial that opens with a drone reveal of the building, walks through the service bays and tire racks, and frames one shot through the center of a tire.</p>
+            <ul class="roles"><li>Drone</li><li>Camera</li><li>Edit</li></ul>
+            <a class="watch" href="https://res.cloudinary.com/uixsjwlk/video/upload/q_auto,vc_h264/portfolio/work-3632969.mp4" target="_blank" rel="noopener">Watch · 01:11 ↗</a>
+          </div>
+        </article>
+
+        <article class="clip">
+          <a class="frame" href="https://res.cloudinary.com/uixsjwlk/video/upload/q_auto,vc_h264/portfolio/work-8659344.mp4" target="_blank" rel="noopener" aria-label="Watch the Black History Gallery film, 3 minutes">
+            <img src="/reel/posters/bhg.jpg" alt="Inside the Black History Gallery with the caption: Through the diaspora scattered, our roots intertwine" width="800" height="450" loading="lazy">
+            <div class="corners" aria-hidden="true"><b></b><b></b><b></b><b></b></div>
+            <span class="play" aria-hidden="true"></span>
+            <span class="tc">03:00</span>
+          </a>
+          <div>
+            <p class="kind mono">Community film · McComb, MS</p>
+            <h3>Black History Gallery</h3>
+            <p class="desc">A three-minute portrait of the gallery at 819 Wall Street: the street from above, the collection up close, lyric captions, and visiting hours.</p>
+            <ul class="roles"><li>Drone</li><li>Camera</li><li>Edit</li><li>Captions</li></ul>
+          </div>
+        </article>
+
+        <article class="clip">
+          <a class="frame" href="https://res.cloudinary.com/uixsjwlk/video/upload/c_crop,w_1080,h_608,g_center/q_auto,vc_h264/portfolio/work-2434185.mp4" target="_blank" rel="noopener" aria-label="Watch the sno-ball stand spot, 1 minute 8 seconds">
+            <img src="/reel/posters/sno.jpg" alt="Hand-lettered snowball flavor board on a yellow sno-ball stand" width="800" height="450" loading="lazy">
+            <div class="corners" aria-hidden="true"><b></b><b></b><b></b><b></b></div>
+            <span class="play" aria-hidden="true"></span>
+            <span class="tc">01:08</span>
+          </a>
+          <div>
+            <p class="kind mono">Social spot · McComb, MS</p>
+            <h3>Sno-Ball Stand</h3>
+            <p class="desc">A summer spot for a New Orleans–style sno-ball stand, from the water tower above town down to the window, the flavor board, and the flags out front.</p>
+            <ul class="roles"><li>Drone</li><li>Camera</li><li>Edit</li></ul>
+          </div>
+        </article>
+
+        <article class="clip">
+          <a class="frame" href="https://res.cloudinary.com/uixsjwlk/video/upload/q_auto,vc_h264/portfolio/work-6463661.mp4" target="_blank" rel="noopener" aria-label="Watch the Dixie Springs Mallard property tour, 1 minute 21 seconds">
+            <img src="/reel/posters/lake.jpg" alt="Aerial view of a calm lake with a covered boat dock and homes along the shore" width="800" height="450" loading="lazy">
+            <div class="corners" aria-hidden="true"><b></b><b></b><b></b><b></b></div>
+            <span class="play" aria-hidden="true"></span>
+            <span class="tc">01:21</span>
+          </a>
+          <div>
+            <p class="kind mono">Real estate · Aerial tour</p>
+            <h3>Dixie Springs Mallard</h3>
+            <p class="desc">A listing tour flown from the water in: the lake, the private dock, the house and grounds, and the gravel drive up to the carport.</p>
+            <ul class="roles"><li>Drone</li><li>Edit</li></ul>
+          </div>
+        </article>
+
+        <article class="clip">
+          <a class="frame" href="https://res.cloudinary.com/uixsjwlk/video/upload/q_auto,vc_h264/portfolio/work-6716578.mp4" target="_blank" rel="noopener" aria-label="Watch the hometown aerial film, 1 minute 53 seconds">
+            <img src="/reel/posters/town.jpg" alt="Drone shot rising over the Thrift Drugs storefront sign" width="800" height="450" loading="lazy">
+            <div class="corners" aria-hidden="true"><b></b><b></b><b></b><b></b></div>
+            <span class="play" aria-hidden="true"></span>
+            <span class="tc">01:53</span>
+          </a>
+          <div>
+            <p class="kind mono">Personal film · Southwest Mississippi</p>
+            <h3>Hometown From Above</h3>
+            <p class="desc">An aerial film of home: the river under the bridge, the rail line, main-street signs like Thrift Drugs, and downtown after dark. It ends on the Visions4U card.</p>
+            <ul class="roles"><li>Drone</li><li>Camera</li><li>Edit</li></ul>
+          </div>
+        </article>
+      </div>
+
+      <p class="reel-note mono">Each video opens full screen in a new tab.</p>
+    </div>
+  </section>
+
+  <section class="block band" id="experience">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <span class="mono">Experience</span>
+          <h2>Where I've worked</h2>
+        </div>
+        <p>The short version of my resume, newest first.</p>
+      </div>
+      <ol class="timeline">
+        <li>
+          <span class="yrs">Jan 2022 – Now</span>
+          <div>
+            <h3>VidVisions AI / Visions4U LLC</h3>
+            <p class="role">Lead Video Producer &amp; Creative Technologist</p>
+            <p class="what">Commercial campaigns, product explainers, and short-form video for regional and digital businesses. I shoot aerial and ground footage, edit and mix in post, use AI tools for scripts, voiceover, and audio, and built Growth HQ to schedule and publish through the Meta Graph API.</p>
+          </div>
+        </li>
+        <li>
+          <span class="yrs">2021 – Now</span>
+          <div>
+            <h3>Silverfoxx2u</h3>
+            <p class="role">Content Creator, Music Producer &amp; Digital Artist</p>
+            <p class="what">An independent music and creator brand I built from scratch. I write, record, mix, and master original tracks, and I make the visualizers and vertical promos for each release, on camera and on the mic.</p>
+          </div>
+        </li>
+        <li>
+          <span class="yrs">2016 – 2022</span>
+          <div>
+            <h3>International Paper &amp; Fabricated Pipe</h3>
+            <p class="role">Production Team Lead &amp; Safety Coordinator</p>
+            <p class="what">Led high-output industrial crews under strict quality-control, calibration, and safety standards. I run creative projects with the same discipline: written procedures, clean handoffs, and on-time delivery.</p>
+          </div>
+        </li>
+      </ol>
+      <div class="facts">
+        <div>
+          <span class="mono label">Core competencies</span>
+          <dl class="comp">
+            <div><dt>Video production &amp; storytelling</dt><dd>Hook scripting, on-camera presenting, studio lighting, multi-cam capture, DJI drone cinematography, screen recordings, and product demos.</dd></div>
+            <div><dt>Post-production &amp; editing</dt><dd>Pacing, sound design, audio leveling and mixing, color grading, captions, thumbnails and titles, and FFmpeg scripting.</dd></div>
+            <div><dt>Technical infotainment</dt><dd>Turning web infrastructure, APIs, AI systems, and SaaS products into clear, watchable video.</dd></div>
+            <div><dt>AI &amp; workflow automation</dt><dd>Generative video and voice tools, Suno for audio scoring, Meta Graph API publishing, and social performance tracking.</dd></div>
+          </dl>
+        </div>
+        <div>
+          <span class="mono label">Education</span>
+          <ul class="edu">
+            <li><strong>Western Governors University</strong><span>B.S., Software Engineering · In progress, expected 2028</span></li>
+            <li><strong>Southwest Mississippi Community College</strong><span>A.S., Process Operations Technology · GPA 3.8 · Summa Cum Laude</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="build">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <span class="mono">What I do</span>
+          <h2>Build, automate, create</h2>
+        </div>
+        <p>I make videos about technology, and I build the technology. My explainers and demos come from someone who knows how the product works under the hood.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <h3>Build</h3>
+          <p>Websites, web apps, online ordering, and SaaS products, designed and shipped end to end.</p>
+          <p class="tools mono">React · Tailwind · Supabase · Vercel · GitHub</p>
+        </div>
+        <div class="pillar">
+          <h3>Automate</h3>
+          <p>AI tools and workflows that take repetitive work off a small team, like publishing, reminders, intake, and inventory.</p>
+          <p class="tools mono">Claude &amp; OpenAI APIs · Meta Graph API · Google AI Studio</p>
+        </div>
+        <div class="pillar">
+          <h3>Create</h3>
+          <p>Drone and ground video, editing, original music, and brand visuals for local businesses and my own releases as Silverfoxx2u.</p>
+          <p class="tools mono">DJI drone &amp; gimbal · FFmpeg · Suno · Google Flow</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block band" id="software">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <span class="mono">Software</span>
+          <h2>Selected builds</h2>
+        </div>
+        <p>A few of the builds in the VidVisions ecosystem. The full index is on vidvisionsai.pro.</p>
+      </div>
+      <div class="ships">
+        <div class="ship">
+          <h3>RoadOps AI</h3><span class="chip dev">AI Systems</span>
+          <p>Trip intelligence and operations platform for trucking, with controlled-access fleet workflows.</p>
+        </div>
+        <div class="ship">
+          <h3>Apex Inventory AI</h3><span class="chip dev">SaaS</span>
+          <p>Demand forecasting, automated reorders, and margin-risk visibility for inventory operations.</p>
+        </div>
+        <div class="ship">
+          <h3>InvoiceOS AI</h3><span class="chip dev">SaaS</span>
+          <p>Invoicing, Stripe Connect payments, automated follow-ups, and revenue reports for small businesses.</p>
+        </div>
+        <div class="ship">
+          <h3>RepoFlow AI</h3><span class="chip dev">SaaS</span>
+          <p>Vehicle repossession, collateral recovery, and lender visibility for the repo industry.</p>
+        </div>
+        <div class="ship">
+          <h3>LittleLog</h3><span class="chip dev">SaaS</span>
+          <p>Childcare center management with attendance, ratio compliance, Stripe billing, and a parent portal.</p>
+        </div>
+        <div class="ship">
+          <h3>AI Dimensions</h3><span class="chip dev">AI Systems</span>
+          <p>Turns photos into editable diagrams with AI vectorization and SVG, PDF, and DXF export.</p>
+        </div>
+        <div class="ship">
+          <h3>Big D's Tire &amp; Auto</h3><span class="chip client">Client site</span>
+          <p>Site for a McComb tire shop with a 3D tire viewer, the full service catalog, and tap-to-call booking.</p>
+        </div>
+        <div class="ship">
+          <h3><a href="https://bellaskitchen.online">Bella's Meals on Wheels</a></h3><span class="chip client">Client site</span>
+          <p>Food truck site for Bella's Kitchen with southern comfort menus and online ordering.</p>
+        </div>
+      </div>
+      <a class="btn ghost all-builds" href="https://vidvisionsai.pro">See every build at vidvisionsai.pro ↗</a>
+    </div>
+  </section>
+
+  <section class="block" id="contact">
+    <div class="wrap about">
+      <div>
+        <span class="mono" style="color:var(--amber);display:block;margin-bottom:12px">About</span>
+        <p><strong>I'm a content creator, video producer, and creative technologist from McComb, Mississippi.</strong> I'm finishing a B.S. in Software Engineering at Western Governors University, and I hold an A.S. in Process Operations Technology from Southwest Mississippi Community College.</p>
+        <p>From 2016 to 2022 I led industrial crews at International Paper and Fabricated Pipe. Today I run VidVisions AI and Visions4U LLC.</p>
+        <p>My music goes out under <strong>Silverfoxx2u</strong>, and my drone footage is signed <strong>Captured by Cashmere</strong>.</p>
+      </div>
+      <div class="contact">
+        <h2>Let's talk.</h2>
+        <div class="lines">
+          <div class="line">
+            <span class="mono">Email</span>
+            <span class="val" id="email">jvnashley@gmail.com</span>
+            <button class="copy" type="button" id="copy-email" data-target="email">Copy</button>
+          </div>
+          <div class="line">
+            <span class="mono">Phone</span>
+            <span class="val" id="phone">(601) 341-3901</span>
+            <button class="copy" type="button" id="copy-phone" data-target="phone">Copy</button>
+          </div>
+          <div class="line">
+            <span class="mono">Portfolio</span>
+            <a class="val" href="https://vidvisionsai.pro">vidvisionsai.pro</a>
+            <span></span>
+          </div>
+          <div class="line">
+            <span class="mono">Resume</span>
+            <a class="val" href="https://vidvisionsai.pro/Jevon_Ashley_Resume.pdf">Download PDF</a>
+            <span></span>
+          </div>
+          <div class="line">
+            <span class="mono">GitHub</span>
+            <a class="val" href="https://github.com/cashmereu3-dev">github.com/cashmereu3-dev</a>
+            <span></span>
+          </div>
+          <div class="line">
+            <span class="mono">LinkedIn</span>
+            <a class="val" href="https://www.linkedin.com/in/jevon-ashley-75183a409" target="_blank" rel="noopener">linkedin.com/in/jevon-ashley-75183a409</a>
+            <span></span>
+          </div>
+        </div>
+        <p class="area mono">Based in McComb, MS</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap mono">
+    <span>Jevon Ashley · VidVisions AI · Visions4U</span>
+    <a href="https://vidvisionsai.pro" style="text-decoration:none">vidvisionsai.pro</a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var host = location.hostname;
+    var ownSite = /(^|\.)vidvisionsai\.pro$/.test(host) || host === 'localhost' || host === '127.0.0.1';
+    if (!ownSite) return;
+    var note = document.querySelector('.reel-note');
+    if (note) note.textContent = 'Tap any frame to play it here.';
+    document.querySelectorAll('a.frame').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var box = document.createElement('div');
+        box.className = 'frame playing';
+        var v = document.createElement('video');
+        v.src = a.href; v.poster = a.querySelector('img').src;
+        v.controls = true; v.playsInline = true; v.preload = 'auto';
+        box.appendChild(v); a.replaceWith(box);
+        var p = v.play(); if (p && p.catch) p.catch(function () {});
+      });
+    });
+    document.querySelectorAll('.clip .watch').forEach(function (w) {
+      w.addEventListener('click', function (e) {
+        var f = w.closest('.clip').querySelector('a.frame');
+        if (f) { e.preventDefault(); f.click(); }
+      });
+    });
+  })();
+
+  document.querySelectorAll('.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var el = document.getElementById(btn.dataset.target);
+      var text = el.textContent.trim();
+      var done = function () {
+        btn.textContent = 'Copied';
+        btn.classList.add('done');
+        setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1600);
+      };
+      var selectIt = function () {
+        var r = document.createRange(); r.selectNodeContents(el);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        btn.textContent = 'Selected';
+        setTimeout(function () { btn.textContent = 'Copy'; }, 1600);
+      };
+      try {
+        navigator.clipboard.writeText(text).then(done, selectIt);
+      } catch (e) { selectIt(); }
+    });
+  });
+</script>
+
+</body>
+</html>
