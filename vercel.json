@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/reel", "destination": "/reel/index.html" },
+    { "source": "/reel/", "destination": "/reel/index.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
