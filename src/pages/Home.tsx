@@ -46,25 +46,25 @@ export default function Home() {
             <div className="relative z-10">
               <div className="text-5xl font-bold mb-4 leading-none tracking-tighter">RoadOps AI</div>
               <p className="text-base text-white/60 font-light leading-relaxed mb-10">
-                Autonomous infrastructure monitoring and intelligent workflow orchestration for modern civil engineering.
+                Truck-first trip intelligence and trucking operations platform with controlled-access fleet workflows.
               </p>
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-blue-400 font-mono text-xl border border-white/5 shadow-inner">01</div>
                   <div>
-                    <div className="text-sm font-bold uppercase tracking-tight">Neural Visual Analysis</div>
-                    <div className="text-[10px] text-white/40 uppercase font-mono tracking-widest">Real-time anomaly detection system</div>
+                    <div className="text-sm font-bold uppercase tracking-tight">Trip Intelligence</div>
+                    <div className="text-[10px] text-white/40 uppercase font-mono tracking-widest">Truck-first routing and trip planning</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-blue-400 font-mono text-xl border border-white/5 shadow-inner">02</div>
                   <div>
-                    <div className="text-sm font-bold uppercase tracking-tight">Cloud Automation</div>
-                    <div className="text-[10px] text-white/40 uppercase font-mono tracking-widest">Distributed edge computing pipelines</div>
+                    <div className="text-sm font-bold uppercase tracking-tight">Fleet Workflows</div>
+                    <div className="text-[10px] text-white/40 uppercase font-mono tracking-widest">Controlled-access operations for crews</div>
                   </div>
                 </div>
               </div>
-              <Link to="/projects/roadops-ai" className="mt-12 inline-block px-10 py-4 bg-white text-black text-xs font-bold uppercase tracking-widest rounded-full hover:bg-blue-400 transition-all hover:scale-105">Explore Platform</Link>
+              <a href="https://www.roadopsai.pro" target="_blank" rel="noopener noreferrer" className="mt-12 inline-block px-10 py-4 bg-white text-black text-xs font-bold uppercase tracking-widest rounded-full hover:bg-blue-400 transition-all hover:scale-105">Explore Platform</a>
             </div>
           </GlassCard>
 
@@ -98,8 +98,9 @@ export default function Home() {
                 <div className="w-10 h-10 rounded-full border border-orange-400/30 flex items-center justify-center text-[10px] text-orange-400 font-bold uppercase">DJI</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-orange-100 tracking-tighter italic">Visions4You</div>
+                <div className="text-3xl font-bold text-orange-100 tracking-tighter italic">Visions4U</div>
                 <p className="text-[10px] text-orange-200/50 uppercase font-bold tracking-widest mt-1">Aerial & Digital Storytelling</p>
+                <a href="/reel/" className="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-orange-300 hover:text-orange-100 transition-colors">Watch the reel →</a>
               </div>
             </GlassCard>
           </div>

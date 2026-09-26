@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Download, Mail, Globe, MapPin, Printer, ExternalLink, Briefcase, GraduationCap, Code } from 'lucide-react';
+import { Download, Mail, Globe, MapPin, Printer, ExternalLink, Briefcase, GraduationCap, Code, Phone } from 'lucide-react';
 import GlassCard from '../components/ui/GlassCard';
 import { BRAND, EDUCATION, LINKS, TECH_STACK } from '../constants/content';
 
@@ -39,11 +39,12 @@ export default function Resume() {
             Print to PDF
           </button>
           <a 
-            href="#" 
+            href={LINKS.resumePdf}
+            download="Jevon_Ashley_Resume.pdf"
             className="px-6 py-3 bg-blue-600 rounded-xl hover:bg-blue-500 transition-colors flex items-center gap-2 font-bold text-sm text-white shadow-lg shadow-blue-600/20"
           >
             <Download className="w-4 h-4" />
-            Download ATS Version
+            Download PDF Resume
           </a>
         </div>
       </div>
@@ -57,11 +58,12 @@ export default function Resume() {
           <div className="flex flex-col md:flex-row justify-between items-start gap-8 border-b border-white/5 pb-10 mb-10">
             <div>
               <h2 className="text-4xl font-bold mb-2">{BRAND.name}</h2>
-              <p className="text-xl text-blue-400 font-medium mb-6 uppercase tracking-wider">{BRAND.headline}</p>
+              <p className="text-xl text-blue-400 font-medium mb-6 uppercase tracking-wider">Content Creator • Video Producer • Creative Technologist</p>
               <div className="flex flex-wrap gap-6 text-gray-400 text-sm">
                 <span className="flex items-center gap-2 italic"><Mail className="w-4 h-4 text-blue-500" /> {LINKS.email}</span>
+                <span className="flex items-center gap-2 italic"><Phone className="w-4 h-4 text-blue-500" /> {LINKS.phone}</span>
                 <span className="flex items-center gap-2 italic"><Globe className="w-4 h-4 text-blue-500" /> {BRAND.domain}</span>
-                <span className="flex items-center gap-2 italic"><MapPin className="w-4 h-4 text-blue-500" /> US Remote / On-site</span>
+                <span className="flex items-center gap-2 italic"><MapPin className="w-4 h-4 text-blue-500" /> McComb, MS</span>
               </div>
             </div>
           </div>
@@ -70,40 +72,49 @@ export default function Resume() {
             <div className="lg:col-span-2 space-y-12">
               {/* Professional Summary */}
               <section>
-                <SectionHeader icon={<Briefcase />} title="Professional Vision" />
+                <SectionHeader icon={<Briefcase />} title="Professional Summary" />
                 <p className="text-gray-300 leading-relaxed italic">
-                  Forward-thinking Software Engineer and AI Strategist with a proven background in technical process operations. 
-                  Focused on architecting scalable digital ecosystems and autonomous platforms. Leveraging current academic 
-                  depth in Software Engineering to implement high-integrity, cloud-native solutions that bridge the gap 
-                  between complex data and human-centric design.
+                  Content creator, video producer, and creative technologist who handles the whole video process: hook writing,
+                  scripting, on-camera presenting, multi-camera production, editing, sound design, and retention analytics.
+                  Founder of VidVisions AI and Visions4U, producing commercial campaigns, technical explainers, aerial drone
+                  work, and product walkthroughs, backed by full-stack web and SaaS experience.
                 </p>
               </section>
 
               {/* Founder Experience */}
               <section>
-                <SectionHeader icon={<Globe />} title="Founder Experience" />
+                <SectionHeader icon={<Globe />} title="Professional Experience" />
                 <div className="space-y-10">
                   <ExperienceItem 
-                    title="Founder & Lead Architect"
-                    company="VidVisionsAI"
-                    period="2023 - Present"
-                    description="Spearheading a multi-platform venture ecosystem focused on AI-driven automation, creative media, and technical infrastructure management."
+                    title="Lead Video Producer & Creative Technologist"
+                    company="VidVisions AI / Visions4U LLC — Captured by Cashmere"
+                    period="Jan 2022 - Present"
+                    description="Commercial campaigns, product explainers, and short-form video for regional and digital businesses."
                     bulletPoints={[
-                      "Architected RoadOps AI: An intelligent logistics system for real-time operational data processing.",
-                      "Engineered Apex Inventory AI: A high-performance SaaS platform for predictive stock management.",
-                      "Designed multi-agent AI workflows to automate content generation and creative data streams.",
-                      "Built and scaled 6+ digital platforms with a unified cloud architecture strategy."
+                      "Direct and deliver commercial campaigns, product explainers, and short-form videos for YouTube, TikTok, and Instagram.",
+                      "Script, capture, and edit screen recordings and demos of software, AI agents, and web apps, including RoadOps AI and RepoFlow AI.",
+                      "Shoot aerial drone footage and ground b-roll for commercial, real estate, and hospitality clients.",
+                      "Built Growth HQ, a media studio dashboard that uses the Meta Graph API for scheduling, publishing, and engagement tracking."
                     ]}
                   />
                   <ExperienceItem 
-                    title="Creative Director"
-                    company="Visions4You — Captured by Kashmere"
+                    title="Content Creator, Music Producer & Digital Artist"
+                    company="SilverFoxx2u"
                     period="2021 - Present"
-                    description="Developing high-end visual storytelling platforms using drone technology and modern digital media workflows."
+                    description="An independent music and creator brand built from scratch."
                     bulletPoints={[
-                      "Integrated AI-assisted post-production workflows into photographic and cinematic pipelines.",
-                      "Executed drone-based technical inspections and creative media captures using DJI systems.",
-                      "Scaled digital brand presence for multiple creative enterprises."
+                      "Write, record, mix, and master original tracks, with visualizers and vertical promos for each release.",
+                      "Combine Suno AI with a DAW to build custom audio beds and sonic brand identities.",
+                      "Appear on camera and voice multimedia assets."
+                    ]}
+                  />
+                  <ExperienceItem 
+                    title="Production Team Lead & Safety Coordinator"
+                    company="Industrial Operations — International Paper, Fabricated Pipe"
+                    period="2016 - 2022"
+                    description="Led high-output crews under strict quality-control, calibration, and safety standards."
+                    bulletPoints={[
+                      "Set standard operating procedures and structured handoffs that carry over to on-deadline creative work."
                     ]}
                   />
                 </div>
@@ -111,10 +122,10 @@ export default function Resume() {
 
               {/* Projects Summary */}
               <section>
-                 <SectionHeader icon={<Globe />} title="Ecosystem Highlights" />
+                 <SectionHeader icon={<Globe />} title="Featured Media" />
                  <div className="grid grid-cols-2 gap-4">
-                    <ProjectBrief title="AI Dimensions" description="Generative intelligence lab." />
-                    <ProjectBrief title="Recovery DNA" description="Health-tech data analysis." />
+                    <a href={LINKS.reel} className="block"><ProjectBrief title="Video Reel" description="Five client and community films with full playback." /></a>
+                    <ProjectBrief title="RepoFlow AI & RoadOps AI" description="Product video demos and walkthroughs." />
                  </div>
               </section>
             </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Mail, Github, Linkedin, Twitter, Send, MapPin, MessageSquare, Globe } from 'lucide-react';
+import { Mail, Github, Linkedin, GraduationCap, Send, MapPin, MessageSquare, Globe, Phone } from 'lucide-react';
 import GlassCard from '../components/ui/GlassCard';
 import { BRAND, LINKS } from '../constants/content';
 import MeshGradient from '../components/ui/MeshGradient';
@@ -65,6 +65,12 @@ export default function Contact() {
                   href={`mailto:${LINKS.email}`}
                 />
                 <ContactInfoItem 
+                  icon={<Phone className="w-6 h-6 text-amber-400" />}
+                  label="Phone"
+                  value={LINKS.phone}
+                  href={`tel:${LINKS.phone.replace(/[^0-9]/g, '')}`}
+                />
+                <ContactInfoItem 
                   icon={<Globe className="w-6 h-6 text-emerald-400" />}
                   label="Official Domain"
                   value={BRAND.domain.replace('https://', '')}
@@ -80,9 +86,9 @@ export default function Contact() {
               <div className="mt-16 pt-8 border-t border-white/5">
                 <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-6">Encrypted Channels</h3>
                 <div className="flex gap-4">
-                  <SocialButton icon={<Github />} label="GitHub" />
-                  <SocialButton icon={<Linkedin />} label="LinkedIn" />
-                  <SocialButton icon={<Twitter />} label="Twitter" />
+                  <SocialButton icon={<Github />} label="GitHub" href={LINKS.github} />
+                  <SocialButton icon={<Linkedin />} label="LinkedIn" href={LINKS.linkedin} />
+                  <SocialButton icon={<GraduationCap />} label="Microsoft Learn" href={LINKS.microsoftLearn} />
                 </div>
               </div>
            </GlassCard>
@@ -194,11 +200,17 @@ function ContactInfoItem({ icon, label, value, href }: { icon: React.ReactNode; 
   return href ? <a href={href} className="block">{content}</a> : content;
 }
 
-function SocialButton({ icon, label }: { icon: React.ReactNode; label: string }) {
+function SocialButton({ icon, label, href }: { icon: React.ReactNode; label: string; href: string }) {
   return (
-    <button className="flex-1 p-3 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center gap-2 hover:bg-white/10 hover:text-white text-gray-400 transition-all text-xs font-bold uppercase tracking-widest">
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
+      className="flex-1 p-3 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center gap-2 hover:bg-white/10 hover:text-white text-gray-400 transition-all text-xs font-bold uppercase tracking-widest"
+    >
       {icon}
       <span className="hidden md:inline">{label}</span>
-    </button>
+    </a>
   );
 }

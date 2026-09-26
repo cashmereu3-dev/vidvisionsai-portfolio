@@ -132,7 +132,7 @@ export default function Portfolio() {
                   </div>
                   <div className="absolute bottom-6 left-6">
                     <h3 className="text-xl font-bold">Drone Cinematography Reel</h3>
-                    <p className="text-xs text-white/60 font-semibold uppercase tracking-widest">Captured by Kashmere</p>
+                    <p className="text-xs text-white/60 font-semibold uppercase tracking-widest">Captured by Cashmere</p>
                   </div>
                </div>
             </GlassCard>
