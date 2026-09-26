@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, Cpu, Github, Linkedin, Mail } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '../../lib/utils';
-import { BRAND } from '../../constants/content';
+import { BRAND, LINKS } from '../../constants/content';
 
 const navLinks = [
   { name: 'Home', href: '/' },
@@ -13,6 +13,9 @@ const navLinks = [
   { name: 'Resume', href: '/resume' },
   { name: 'Contact', href: '/contact' },
 ];
+
+// The reel is a static page in public/reel, so it needs a full page load instead of a router link.
+const reelLink = { name: 'Reel', href: LINKS.reel };
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,10 +47,13 @@ export default function Navbar() {
               <span className="vertical-text whitespace-nowrap">{link.name}</span>
             </Link>
           ))}
+          <a href={reelLink.href} className="flex flex-col items-center gap-2 transition-all hover:text-white group text-gray-400">
+            <span className="vertical-text whitespace-nowrap">{reelLink.name}</span>
+          </a>
         </div>
         <div className="mt-auto flex flex-col gap-6 opacity-40">
-          <a href="#" className="w-6 h-6 border border-white rounded-full flex items-center justify-center hover:scale-110 transition-transform"><Github className="w-3 h-3" /></a>
-          <a href="#" className="w-6 h-6 border border-white rounded-full flex items-center justify-center hover:scale-110 transition-transform"><Linkedin className="w-3 h-3" /></a>
+          <a href={LINKS.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-6 h-6 border border-white rounded-full flex items-center justify-center hover:scale-110 transition-transform"><Github className="w-3 h-3" /></a>
+          <a href={LINKS.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-6 h-6 border border-white rounded-full flex items-center justify-center hover:scale-110 transition-transform"><Linkedin className="w-3 h-3" /></a>
         </div>
       </nav>
 
@@ -84,6 +90,9 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+            <a href={reelLink.href} className="text-2xl font-bold uppercase tracking-widest transition-colors text-white/60">
+              {reelLink.name}
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Cpu, Github, Linkedin, Twitter, Mail, ExternalLink } from 'lucide-react';
+import { Cpu, Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
 import { BRAND, LINKS } from '../../constants/content';
 
 export default function Footer() {
@@ -21,10 +21,9 @@ export default function Footer() {
               Advancing the intersection of AI, software engineering, and creative technology. Building the future of intelligent systems.
             </p>
             <div className="flex gap-4">
-              <SocialLink href="#" icon={<Github className="w-5 h-5" />} />
-              <SocialLink href="#" icon={<Linkedin className="w-5 h-5" />} />
-              <SocialLink href="#" icon={<Twitter className="w-5 h-5" />} />
-              <SocialLink href={`mailto:${LINKS.email}`} icon={<Mail className="w-5 h-5" />} />
+              <SocialLink href={LINKS.github} label="GitHub" icon={<Github className="w-5 h-5" />} />
+              <SocialLink href={LINKS.linkedin} label="LinkedIn" icon={<Linkedin className="w-5 h-5" />} />
+              <SocialLink href={`mailto:${LINKS.email}`} label="Email" icon={<Mail className="w-5 h-5" />} />
             </div>
           </div>
 
@@ -33,6 +32,11 @@ export default function Footer() {
             <ul className="space-y-4">
               <FooterLink to="/about">About Journey</FooterLink>
               <FooterLink to="/portfolio">AI Portfolio</FooterLink>
+              <li>
+                <a href={LINKS.reel} className="text-gray-400 hover:text-blue-400 transition-colors inline-flex items-center gap-1 group">
+                  Video Reel
+                </a>
+              </li>
               <FooterLink to="/projects">Core Projects</FooterLink>
               <FooterLink to="/resume">Technical Resume</FooterLink>
             </ul>
@@ -61,10 +65,11 @@ export default function Footer() {
   );
 }
 
-function SocialLink({ href, icon }: { href: string; icon: React.ReactNode }) {
+function SocialLink({ href, icon, label }: { href: string; icon: React.ReactNode; label: string }) {
   return (
     <a
       href={href}
+      aria-label={label}
       target="_blank"
       rel="noopener noreferrer"
       className="p-2 bg-white/5 rounded-full hover:bg-blue-600/20 hover:text-blue-400 transition-all border border-white/10"
