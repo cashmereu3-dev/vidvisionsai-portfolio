@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { ArrowRight, ArrowUpRight, Cpu, Globe, Rocket, Shield, Sparkles, Terminal } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/sections/Hero';
-import AIEcosystemVisual from '../components/sections/AIEcosystemVisual';
+import MarketingReel from '../components/sections/MarketingReel';
 import MusicPlayer from '../components/ui/MusicPlayer';
 import GlassCard from '../components/ui/GlassCard';
 import { PROJECTS, TECH_STACK } from '../constants/content';
@@ -175,31 +175,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Interactive 3D Ecosystem */}
+      {/* Marketing & Ad Work */}
       <section className="max-w-7xl mx-auto px-4 md:px-12 lg:px-20">
         <div className="flex flex-col md:flex-row items-end justify-between mb-12 gap-8">
           <div className="max-w-2xl">
-            <h3 className="text-[10px] font-mono text-blue-400 uppercase tracking-[0.2em] mb-4 font-bold">Spatial Intelligence</h3>
+            <h3 className="text-[10px] font-mono text-orange-400 uppercase tracking-[0.2em] mb-4 font-bold">Marketing &amp; Ad Work</h3>
             <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-6">
-              Neural Network <span className="italic text-gray-500">Infrastructure</span>
+              Ads That <span className="italic text-gray-500">Move People</span>
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed">
-              An interactive representation of the interconnected AI models and platforms powering the VidVisions ecosystem. Explore the nodes to see the relationships between distributed intelligences.
+              Commercials and promos for local businesses, shot from the ground and the sky, then edited and scored in-house through Visions4U. Tap any spot to play it.
             </p>
           </div>
           <div className="flex gap-4">
             <div className="px-6 py-3 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-md">
-              <div className="text-[10px] font-mono text-white/40 uppercase mb-1">Active Nodes</div>
-              <div className="text-2xl font-bold font-mono">14</div>
+              <div className="text-[10px] font-mono text-white/40 uppercase mb-1">Films</div>
+              <div className="text-2xl font-bold font-mono">5</div>
             </div>
             <div className="px-6 py-3 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-md">
-              <div className="text-[10px] font-mono text-white/40 uppercase mb-1">Grid Latency</div>
-              <div className="text-2xl font-bold font-mono">1.2ms</div>
+              <div className="text-[10px] font-mono text-white/40 uppercase mb-1">Total Runtime</div>
+              <div className="text-2xl font-bold font-mono">8:34</div>
             </div>
           </div>
         </div>
-        
-        <AIEcosystemVisual />
+
+        <MarketingReel />
       </section>
 
       {/* Sonic Ecosystem Section */}
