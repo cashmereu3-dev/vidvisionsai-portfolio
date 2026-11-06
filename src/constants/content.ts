@@ -216,6 +216,14 @@ export const PROJECTS = [
         tags: ["Creative", "Community", "Media"],
         image: "https://s0.wp.com/mshots/v1/https%3A%2F%2Fmccray.vercel.app?w=800",
   },
+  {
+        id: "auto-parts-voice-assistant",
+        title: "Auto Parts Voice Assistant",
+        description: "Completed voice-assistant demo for auto-parts counters, with natural-language parts search, inventory responses, call logs, callback tracking, and a five-tab operations dashboard. Built with a sample catalog; not advertised as a public live phone service.",
+        url: "/projects/auto-parts-voice-assistant",
+        tags: ["AI Systems", "Automotive", "Automation"],
+        image: "/auto-parts-voice-assistant-cover.svg",
+  },
   ];
 
 export const EDUCATION = [

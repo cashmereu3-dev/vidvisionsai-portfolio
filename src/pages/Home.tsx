@@ -148,7 +148,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {PROJECTS.map((project) => (
-            <a key={project.id} href={project.url} target="_blank" rel="noopener noreferrer" className="group">
+            <a key={project.id} href={project.url} target={project.url.startsWith('/') ? undefined : '_blank'} rel={project.url.startsWith('/') ? undefined : 'noopener noreferrer'} className="group">
               <GlassCard className="h-full p-0 overflow-hidden border-white/5" hover={false}>
                 <div className="relative aspect-[16/9] overflow-hidden bg-black/40">
                   <img src={project.image} alt={project.title} loading="lazy" className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
