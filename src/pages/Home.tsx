@@ -35,8 +35,8 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center justify-between mt-8 pt-4 border-t border-white/5">
-              <span className="text-4xl font-bold tracking-tighter">19+</span>
-              <span className="text-[10px] font-mono text-white/40 leading-tight uppercase font-bold">SaaS<br />Platforms</span>
+              <span className="text-4xl font-bold tracking-tighter">{PROJECTS.length}</span>
+              <span className="text-[10px] font-mono text-white/40 leading-tight uppercase font-bold">Selected<br />Projects</span>
             </div>
           </GlassCard>
 
@@ -143,7 +143,7 @@ export default function Home() {
             Every <span className="italic text-gray-500">Build</span>.
           </h2>
           <p className="text-gray-400 text-lg leading-relaxed max-w-2xl">
-            All {PROJECTS.length} live platforms in the VidVisions ecosystem — SaaS, AI systems, creative experiences, and business launches.
+            Explore {PROJECTS.length} showcased projects across software, AI, original creative work, and delivered client websites.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

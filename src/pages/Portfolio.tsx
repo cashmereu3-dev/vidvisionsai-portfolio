@@ -117,7 +117,7 @@ export default function Portfolio() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4 italic">Creative Technology Crossover</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Visual storytelling amplified by technical precision. From drone cinematography to AI-enhanced post-production.
+              Original client video productions that I filmed and edited through Visions4U / Captured by Cashmere, combining hands-on cinematography, drone work, and creative post-production.
             </p>
           </div>
           
